@@ -15,4 +15,5 @@ jobs:
     steps:
       - uses: NotTodayThankyou/NotTodayThankyou@main
         with:
-          max-prs-per-day: "86400"
+          allowed-authors: "JamesParrott-machine-account"
+          max-prs-per-day: "0"
