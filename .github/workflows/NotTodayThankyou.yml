@@ -17,6 +17,6 @@ jobs:
         with:
           close-message: "❌ **PR Automatically Closed**: Workflows have not been executed on your fork."
           post-comment: "true"
-          allowed-authors: "JamesParrott-machine-account"
+          allowed-authors: ""
           max-prs-per-day: "-1"
           require-associated-issue: "false"
