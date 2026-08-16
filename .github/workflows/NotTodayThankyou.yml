@@ -15,8 +15,4 @@ jobs:
     steps:
       - uses: NotTodayThankyou/NotTodayThankyou@main
         with:
-          close-message: "❌ **PR Automatically Closed**: Workflows have not been executed on your fork."
-          post-comment: "true"
-          allowed-authors: ""
-          max-prs-per-day: "-1"
-          require-associated-issue: "false"
+          allowed-authors: "JamesParrott-machine-account"
