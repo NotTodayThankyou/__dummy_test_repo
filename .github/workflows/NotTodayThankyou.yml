@@ -1,0 +1,20 @@
+name: Close PRs from Forks that didn't run CI
+
+on:
+  pull_request:
+    types: [opened, reopened]
+    branches:
+      - main
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: read
+    steps:
+      - uses: NotTodayThankyou/NotTodayThankyou@Test-on-pull-request
+        with:
+          allowed-authors: "JamesParrott-machine-account"
+          max-prs-per-day: "0"
+          require-associated-issue: "true"
