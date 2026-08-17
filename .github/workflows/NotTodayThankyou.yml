@@ -14,4 +14,7 @@ jobs:
       contents: read
     steps:
       - uses: NotTodayThankyou/NotTodayThankyou@Typescript
-        
+        with:
+          allowed-authors: "JamesParrott-machine-account"
+          max-prs-per-day: "0"
+          require-associated-issue: "true"
