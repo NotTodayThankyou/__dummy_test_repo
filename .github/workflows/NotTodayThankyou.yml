@@ -13,5 +13,8 @@ jobs:
       pull-requests: write
       contents: read
     steps:
-      - uses: NotTodayThankyou/NotTodayThankyou@JS_Action
-        
+      - uses: NotTodayThankyou/NotTodayThankyou@Typescript
+        with:
+          allowed-authors: "JamesParrott-machine-account"
+          max-prs-per-day: "0"
+          require-associated-issue: "true"
